@@ -1,85 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
-  url(./Lidingo.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./Lidingo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
-    color: #333;
-    margin:0;
-    padding-top: 50px;
+  color: #333;
+  margin: 0;
+  padding-top: 50px;
 }
 
-.searchContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.searchInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    transition: border-color 0.3s ease;
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
 }
 
-.searchInput:hover {
-    border-color: #3D444C;
+.search-input:hover {
+  border-color: #3d444c;
 }
 
-.searchButton {
-    background-color: #3D444C;
-    color: #fff;
-    border: none;
-    padding: 10px 40px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.search-button {
+  background-color: #3d444c;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.searchButton:hover {
-    background-color: #585a5f;
-    transform: scale(1.05);
+.search-button:hover {
+  background-color: #585a5f;
+  transform: scale(1.05);
 }
 
-.resultsList {
-    list-style: none;
-    padding: 0;
-    text-align: left;
+.results-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
 }
 
-.resultsList li {
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
+.results-list li {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
 }
-
 
 .not_found {
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    display: none;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .searchContainer {
-        width: 50%;
-        margin: 0 auto;
-    }
+  .search-container {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
