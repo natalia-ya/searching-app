@@ -20,7 +20,7 @@ function search() {
     resultsList.innerHTML = "";
     notFoundMessage.style.display = "none"; 
 
-    if (searchInput === "") {
+    if (searchInput.length < 3) {
         notFoundMessage.style.display = "block"; 
         return;
     }
@@ -29,11 +29,12 @@ function search() {
 
     for (const person of jsonData) {
         const fullName = `${person.first_name} ${person.last_name}`;
+        const personnummer = person.personnummer.toString(); 
+
         if (
-            (searchInput === person.personnummer && searchInput.length === 10) || 
-            (searchInput === fullName.toLowerCase()) || 
-            (fullName.toLowerCase().includes(searchInput)) || 
-            (searchInput === person.email.toLowerCase()) 
+            personnummer.includes(searchInput) || 
+            fullName.toLowerCase().includes(searchInput) || 
+            person.email.toLowerCase().includes(searchInput) 
         ) {
             const listItem = document.createElement("li");
             listItem.innerHTML = `
