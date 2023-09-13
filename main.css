@@ -14,10 +14,21 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.title h1 {
+    font-size: 36px;
   color: #333;
   margin: 0;
-  padding-top: 50px;
+}
+
+.title .logo {
+  max-width: 40px;
+  margin-right: 10px;
 }
 
 .search-container {
