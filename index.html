@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
     <title>Lidingö Stad</title>
-   
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>Lidingö People</h1>
+    <div class="title">
+      <img src="./logo_lidingo.svg" alt="lidingo logo" class="logo" />
+      <h1>Lidingö People</h1>
+    </div>
+
     <div id="searchContainer" class="search-container">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search by personnummer, name or email">
-        <button id="searchButton" class="search-button">Search</button>
-        <ul id="resultsList" class="results-list"></ul>
-        <div id="notFoundMessage" class="not_found">Person is not found.</div> <!-- Added message element -->
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Search by personnummer, name or email"
+      />
+      <button id="searchButton" class="search-button">Search</button>
+      <ul id="resultsList" class="results-list"></ul>
+      <div id="notFoundMessage" class="not_found">Person is not found.</div>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
